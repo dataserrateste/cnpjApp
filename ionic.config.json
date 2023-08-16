@@ -1,0 +1,8 @@
+{
+  "name": "cnpjApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "a2037a19"
+}

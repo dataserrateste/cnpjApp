@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      CNPJ App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Digite o CNPJ</ion-label>
+    <ion-input type="text" [(ngModel)]="cnpj"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="buscarDados()">Buscar Dados</ion-button>
+
+  <ion-card *ngIf="dados">
+    <ion-card-header>
+      Dados Recebidos
+    </ion-card-header>
+    <ion-card-content>
+      <p>Classificação: {{ classificacao }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
